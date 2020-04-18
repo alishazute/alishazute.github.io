@@ -1,17 +1,43 @@
 
-function FileHelper()
+for (i = 1; i <= 3; i++) 
+	{
+		get_num_post(i);
+		
 
-{
-    FileHelper.readStringFromFileAtPath = function(pathOfFileToReadFrom)
-    {
-        var request = new XMLHttpRequest();
-        request.open("GET", pathOfFileToReadFrom, false);
-        request.send(null);
-		var el = document.getElementById("blog_post");
-        el.innerHTML = request.responseText;
-		print(request.responseText);
-    }
+	}
+
+
+
+
+
+
+function get_num_post(x){
+
+	$.ajax("blog_posts/"+x+".txt").done(displayText).fail(showError);
+
 }
 
 
-FileHelper.readStringFromFileAtPath ( "../blog_posts/test_post.txt" );
+
+function displayText(data){
+    $("#blog_post").append(data);
+    $("#blog_post").append("<br/><br/><br/>");
+}
+function showError(data){
+   var mess = "An error occured!";
+   $("#blog_post").text(mess);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

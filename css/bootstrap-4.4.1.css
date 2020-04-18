@@ -49,6 +49,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#reply-from-server{
+        overflow:scroll;
+        height:300px;
+        color:red;
+    }
+
 
 .profile-picture
 {
@@ -77,6 +83,9 @@ position: relative;
 	width:40%;
 	}
 	
+}
+#latest_post{
+	overflow:hidden;
 }
 
 

@@ -11,7 +11,7 @@
 	 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
-	  <script src = "js/get_post.js"></script>
+	  
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <a class="navbar-brand" href="#">Texas Gymnastics</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -24,6 +24,10 @@
         </ul>
       </div>
     </nav>
+	  
+	  
+	  
+	  
 
       <div class="jumbotron" style ="padding-bottom: 25%">
 		<div class="container" >
@@ -65,9 +69,8 @@
 				<script src="https://snapwidget.com/js/snapwidget.js"></script>
 				<iframe src="https://snapwidget.com/embed/814882" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; "></iframe>
 							</div>
-			<div class = "col">
-				<div><object data="blog_posts/test_post.txt" 
-					style = "min-height: 250px; width: inherit"></object></div>
+			<div class = "col" style= "overflow: hidden">
+				<div id="latest_post"></div>
 			</div>
 		</div>
 		</div>
@@ -111,6 +114,8 @@
     <footer>
 		
     </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src = "js/get_latest_post.js"></script>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
     <script src="js/jquery-3.4.1.min.js"></script> 
     <!-- Include all compiled plugins (below), or include individual files as needed --> 
