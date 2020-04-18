@@ -1,0 +1,28 @@
+<script>
+var i = 0;  //increment number
+var j=0;
+var blog_path = "/blog_post/";
+var blog_name= i +".txt";
+
+function blogs() 
+{
+	blogsArray = new Array()
+
+	blogsArray[j]=blog_path + i;
+	if (imagesArray[j] == “null”)
+	{
+		break;
+	}
+
+	else
+	{
+		<div class = "row">
+			<div><object data="blog_posts/test_post.txt" style = "min-height: 250px; width: inherit"></object></div>
+		</div>
+		<br>
+		i++;
+		j++;
+		blogs();
+	}
+}
+</script>
